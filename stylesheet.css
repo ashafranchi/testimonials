@@ -1,0 +1,39 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-weight: 500;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+.flex-grid {
+    display: flex;
+}
+.name {
+    font-weight: 600;
+}
+.testimonial {
+    color: white;
+    font-size: 13px;
+    flex: 1;
+    padding: 20px;
+}
+.testimonial.first {
+    background-color: hsl(263, 55%, 52%);
+}
+.testimonial.second {
+    background-color: hsl(217, 19%, 35%);
+}
+.testimonial.third {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+.testimonial.fourth {
+    background-color: hsl(219, 29%, 14%);
+}
+.testimonial.fifth {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
