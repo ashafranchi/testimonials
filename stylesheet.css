@@ -2,38 +2,95 @@ body {
     background-color: hsl(210, 46%, 95%);
     font-weight: 500;
     font-family: "Barlow Semi Condensed", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 
 h1 {
     color: navy;
     margin-left: 20px;
 }
+
 .flex-grid {
     display: flex;
+    flex-direction: column;
 }
+
+@media only screen and (min-width: 700px) {
+    .flex-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "c c w k"
+        "h p p k";
+    }
+}
+
+
+.profileimage {
+    border-radius: 80%;
+    margin-right: 10px;
+}
+
 .name {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-bottom: 6px;
 }
+.grad {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 50%);
+    display: flex;
+}
+
+.abovequote {
+    display: inline-block;
+}
+
+.top {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
 .testimonial {
     color: white;
-    font-size: 13px;
     flex: 1;
     padding: 20px;
+    padding-bottom: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    line-height: 0.5 rem;
 }
 .testimonial.first {
     background-color: hsl(263, 55%, 52%);
+    grid-area: c;
 }
 .testimonial.second {
     background-color: hsl(217, 19%, 35%);
+    grid-area: w;
 }
 .testimonial.third {
     background-color: hsl(0, 0%, 100%);
     color: hsl(217, 19%, 35%);
+    grid-area: h;
 }
 .testimonial.fourth {
     background-color: hsl(219, 29%, 14%);
+    grid-area: p;
 }
 .testimonial.fifth {
     background-color: hsl(0, 0%, 100%);
     color: hsl(217, 19%, 35%);
+    grid-area: k;
+}
+
+.attribution {
+    color: hsl(217, 19%, 35%);
+    margin: 16px;
 }
